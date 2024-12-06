@@ -1,0 +1,23 @@
+{
+  "name": "react-smart-route",
+  "version": "1.0.0",
+  "description": "React 版智能路由库。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhenHena/react-smart-route.git"
+  },
+  "keywords": [
+    "React",
+    "Next.js"
+  ],
+  "author": "Cheng Bin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhenHena/react-smart-route/issues"
+  },
+  "homepage": "https://github.com/ZhenHena/react-smart-route#readme"
+}
