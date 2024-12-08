@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/lib/SmartLink.js"  ],
   "exclude": [
     "node_modules"
   ]
