@@ -10,8 +10,7 @@
     "url": "git+https://github.com/ZhenHena/react-smart-route.git"
   },
   "keywords": [
-    "React",
-    "Next.js"
+    "React"
   ],
   "author": "Cheng Bin",
   "license": "MIT",
