@@ -4,6 +4,8 @@
   "description": "React 版智能路由库。",
   "main": "index.js",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/ZhenHena/react-smart-route/issues"
   },
-  "homepage": "https://github.com/ZhenHena/react-smart-route#readme"
+  "homepage": "https://github.com/ZhenHena/react-smart-route#readme",
+  "dependencies": {
+    "next": "^15.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
 }
