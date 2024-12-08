@@ -29,14 +29,14 @@ const DynamicContent = ({ routes }: { routes: Route[] }) => {
             });
 
             if (matchedRoute) {
-                const pathKeys = matchedRoute.path.match(/:\w+/g) || [];
-                const pathValues = currentPath.match(new RegExp(matchedRoute.path.replace(/:\w+/g, '(\\w+)'))) || [];
-
-                // 提取路径参数。
-                const params = pathKeys.reduce((acc, key, index) => {
-                    acc[key.substring(1)] = pathValues[index + 1];
+                const pathKeys: string[] = matchedRoute.path.match(/:\w+/g) || [];
+                const pathValues: string[] = currentPath.match(new RegExp(matchedRoute.path.replace(/:\w+/g, '(\\w+)'))) || [];
+                
+                // 提取路径参数
+                const params = pathKeys.reduce<Record<string, string>>((acc, key, index) => {
+                    acc[key.substring(1)] = pathValues[index + 1] || ''; // 确保有默认值
                     return acc;
-                }, {} as Record<string, string>);
+                }, {});
 
                 setParams(params);
                 setComponent(() => matchedRoute.component);
