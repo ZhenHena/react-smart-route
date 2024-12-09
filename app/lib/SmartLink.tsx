@@ -1,5 +1,4 @@
-﻿import React from 'react';
-import { ReactNode, useEffect, useState } from 'react';
+﻿import { ReactNode, useEffect, useState } from 'react';
 
 // 定义 SmartLink 组件的属性接口。
 interface SmartLinkProps {
