@@ -1,8 +1,4 @@
-﻿// 智能链接组件。
-// 实现了点击链接不刷新页面，动态的改变浏览器显示的 URL ，并且刷新 DynamicContent 动态内容组件内容。
-
-// 引入 React 的钩子。
-import { ReactNode, useEffect, useState } from 'react';
+﻿import { ReactNode, useEffect, useState } from 'react';
 
 // 定义 SmartLink 组件的属性接口。
 interface SmartLinkProps {
