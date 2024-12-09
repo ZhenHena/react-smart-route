@@ -12,14 +12,17 @@ export default function RootLayout({
         <div className="container">
           <div className="sidebar">
             <h2>菜单</h2>
+
+            <SmartLink href="/">
+              首页
+            </SmartLink>
+
             <SmartLink href="/page1">
-              点击按钮1
+              Page1
             </SmartLink>
-            <SmartLink href="/page2">
-              点击按钮2
-            </SmartLink>
-            <SmartLink href="/page2/abc">
-              点击按钮3
+
+            <SmartLink href="/pages/abc">
+              ABC
             </SmartLink>
           </div>
           <div className="content">
