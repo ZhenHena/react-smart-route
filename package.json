@@ -1,6 +1,6 @@
 {
   "name": "react-smart-route",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React 版智能路由库。",
   "main": "dist/index.js",
   "scripts": {
