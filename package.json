@@ -1,6 +1,6 @@
 {
   "name": "react-smart-route",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "React 版智能路由库。",
   "main": "dist/index.js",
   "scripts": {
@@ -8,9 +8,7 @@
     "prepare": "npm run build"
   },
   "files": [
-    "dist/**/*",
-    "README.md",
-    "LICENSE"
+    "dist"
   ],
   "repository": {
     "type": "git",
