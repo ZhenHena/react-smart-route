@@ -3,7 +3,7 @@
     "include": [
       "app/lib/DynamicContent.tsx", // 指定要编译的组件。
       "app/lib/SmartLink.tsx",      // 指定要编译的组件。
-      "app/index.js",               // 包含 index.js。
+      "app/index.ts",               // 包含 index.js。
       "app/index.d.ts"              // 包含 index.js。
     ],
     "compilerOptions": {
@@ -11,5 +11,6 @@
       "noEmit": false,              // 确保输出编译结果。
       "jsx": "react-jsx",
       "removeComments": true,       // 移除注释。
+      "declaration": true
     }
   }
