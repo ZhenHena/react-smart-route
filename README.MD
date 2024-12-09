@@ -12,3 +12,4 @@ npm install react-smart-route@latest
 ```
 
 ## 使用
+待完善，可直接到github上看源代码有完整示例代码。
