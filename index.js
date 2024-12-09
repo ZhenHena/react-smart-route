@@ -1,2 +1,2 @@
-export { default as DynamicContent } from './src/lib/DynamicContent';
-export { default as SmartLink } from './src/lib/SmartLink';
+export { default as DynamicContent } from './app/lib/DynamicContent';
+export { default as SmartLink } from './app/lib/SmartLink';
