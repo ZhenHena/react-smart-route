@@ -4,7 +4,7 @@
   "description": "React 版智能路由库。",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "concurrently next dev",
+    "dev": "next dev",
     "build": "tsc --project tsconfig.build.json && next build",
     "prepare": "npm run build"
   },
