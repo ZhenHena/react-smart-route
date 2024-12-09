@@ -1,8 +1,9 @@
 {
   "name": "react-smart-route",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "React 版智能路由库。",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "next dev",
     "build": "tsc --project tsconfig.build.json && next build",

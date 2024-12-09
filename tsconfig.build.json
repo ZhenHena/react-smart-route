@@ -3,7 +3,8 @@
     "include": [
       "app/lib/DynamicContent.tsx", // 指定要编译的组件。
       "app/lib/SmartLink.tsx",      // 指定要编译的组件。
-      "app/index.js"                // 包含 index.js。
+      "app/index.js",               // 包含 index.js。
+      "app/index.d.ts"              // 包含 index.js。
     ],
     "compilerOptions": {
       "outDir": "./dist",           // 输出目录。
