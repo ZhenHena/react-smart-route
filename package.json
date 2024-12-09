@@ -1,19 +1,20 @@
 {
   "name": "react-smart-route",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React 版智能路由库。",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build"
+    "build": "tsc --project tsconfig.build.json && next build",
+    "prepare": "npm run build"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZhenHena/react-smart-route.git"
   },
-  "keywords": [
-    "React"
-  ],
+  "keywords": ["React"],
   "author": "Cheng Bin",
   "license": "MIT",
   "bugs": {
@@ -23,11 +24,11 @@
   "dependencies": {
     "next": "^15.0.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "@types/node": "22.10.1",
-    "@types/react": "19.0.1",
-    "typescript": "5.7.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "22.10.1",
+    "@types/react": "19.0.1"
   }
 }
