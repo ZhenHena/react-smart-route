@@ -1,4 +1,4 @@
-import { jsx as _jsx } from "react/jsx-runtime";
+import React from 'react';
 import { useEffect, useState } from 'react';
 export default function SmartLink({ href, children }) {
     const [isActive, setIsActive] = useState(false);
@@ -17,5 +17,6 @@ export default function SmartLink({ href, children }) {
         window.history.pushState(null, '', href);
         window.dispatchEvent(new PopStateEvent('popstate'));
     };
-    return (_jsx("div", { className: isActive ? 'smart-link-active' : '', children: _jsx("a", { href: href, onClick: handleLinkClick, children: children }) }));
+    return (React.createElement("div", { className: isActive ? 'smart-link-active' : '' },
+        React.createElement("a", { href: href, onClick: handleLinkClick }, children)));
 }

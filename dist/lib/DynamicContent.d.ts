@@ -1,3 +1,4 @@
+import React from 'react';
 interface Route {
     path: string;
     component: React.ComponentType<object>;
@@ -5,7 +6,7 @@ interface Route {
 declare const DynamicContent: {
     ({ routes }: {
         routes: Route[];
-    }): import("react/jsx-runtime").JSX.Element;
+    }): React.JSX.Element;
     displayName: string;
 };
 export default DynamicContent;

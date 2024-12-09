@@ -9,7 +9,7 @@
     "compilerOptions": {
       "outDir": "./dist",           // 输出目录。
       "noEmit": false,              // 确保输出编译结果。
-      "jsx": "react-jsx",
+      "jsx": "react",
       "removeComments": true,       // 移除注释。
       "declaration": true
     }

@@ -1,9 +1,9 @@
 "use client";
-import { jsx as _jsx } from "react/jsx-runtime";
+import React from 'react';
 import { useState, useEffect } from 'react';
 const DynamicContent = ({ routes }) => {
     const [Component, setComponent] = useState(() => {
-        const DefaultComponent = () => _jsx("div", {});
+        const DefaultComponent = () => React.createElement("div", null);
         DefaultComponent.displayName = "DefaultComponent";
         return DefaultComponent;
     });
@@ -26,7 +26,7 @@ const DynamicContent = ({ routes }) => {
                 setComponent(() => matchedRoute.component);
             }
             else {
-                const NotFoundComponent = () => _jsx("div", { children: "\u672A\u627E\u5230\u5339\u914D\u7684\u5185\u5BB9" });
+                const NotFoundComponent = () => React.createElement("div", null, "\u672A\u627E\u5230\u5339\u914D\u7684\u5185\u5BB9");
                 NotFoundComponent.displayName = "NotFoundComponent";
                 setComponent(() => NotFoundComponent);
             }
@@ -37,7 +37,7 @@ const DynamicContent = ({ routes }) => {
             window.removeEventListener('popstate', handleUrlChange);
         };
     }, [routes]);
-    return _jsx(Component, Object.assign({}, params));
+    return React.createElement(Component, Object.assign({}, params));
 };
 DynamicContent.displayName = "DynamicContent";
 export default DynamicContent;

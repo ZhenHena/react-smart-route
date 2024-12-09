@@ -1,4 +1,5 @@
 ﻿"use client";
+import React from 'react';
 import { useState, useEffect } from 'react';
 
 // 定义 Route 接口来描述每个路由的结构。
