@@ -6,6 +6,7 @@ import Content from './Content';
 const routes = [
   { path: '/', component: Content },
   { path: '/page1', component: Content },
+  { path: '/page2', component: Content },
   { path: '/page2/:mapName', component: Content },
 ];
 
